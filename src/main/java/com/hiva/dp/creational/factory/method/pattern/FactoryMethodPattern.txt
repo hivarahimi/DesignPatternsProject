@@ -1,0 +1,24 @@
+Problem: Vehicle Manufacturing System
+Problem Description:
+A vehicle manufacturing company needs a system to produce various types of vehicles, such as:
+cars,
+trucks,
+and motorcycles.
+Each type of vehicle has its unique features and manufacturing process.
+
+Requirements:
+Create an abstract class/interface Vehicle with methods like assemble() and describeVehicle().
+Implement concrete classes Car, Truck, and Motorcycle, extending the Vehicle interface,
+each with its specific implementation of assemble() and describeVehicle() methods.
+Create an abstract class/interface called VehicleFactory with a method manufactureVehicle(),
+which returns a Vehicle instance.
+Implement concrete factories CarFactory, TruckFactory, and MotorcycleFactory that inherit from VehicleFactory.
+Each factory should implement the manufactureVehicle() method to create the corresponding vehicle type.
+Details:
+Each vehicle type (Car, Truck, Motorcycle) has its own assembly process and unique features that need to be described.
+The VehicleFactory with the Factory Method allows the company to produce different types of vehicles
+without changing the client code.
+For example, CarFactory creates instances of Car, TruckFactory creates instances of Truck, and so on.
+This problem demonstrates the use of the Factory Method Pattern to create different types of vehicles
+within a manufacturing system, allowing for easy extension and customization of vehicle production
+without modifying the client code.

@@ -1,0 +1,25 @@
+Problem: Bank Card Management System
+Problem Description:
+You are required to implement a simple system for managing bank cards.
+In this system, various types of bank cards exist, such as:
+credit cards,
+debit cards,
+prepaid cards,
+and so on.
+
+Requirements:
+The main structure of the system consists of entities Card and CardFactory.
+Card is an interface that includes functions like getCardType() to return the type of the card.
+For each different type of card, a class implementing this interface should be created.
+CardFactory is a class responsible for creating instances of different types of cards.
+It returns an instance of the corresponding class based on the input card type.
+For example,
+classes like CreditCard, DebitCard, PrepaidCard, etc.,
+should be created to represent different types of cards.
+Details:
+Each bank card may have its own functionality and specific features.
+For instance, a credit card might have the ability to make payments from a specific account,
+whereas a debit card might deduct funds from a different account.
+Utilizing the CardFactory and this pattern,
+you can easily create the desired type of card without complicating your code.
+This problem can help you understand and implement the Factory Pattern.
